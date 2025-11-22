@@ -1,0 +1,56 @@
+section {
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	position: relative;
+}
+
+header h1 {
+	position: absolute;
+	bottom: 1rem;
+	left: 4rem;
+	padding: 0.5rem;
+}
+
+header span {
+	position: absolute;
+	bottom: 1rem;
+	right: 4rem;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 0.5rem;
+}
+
+header img {
+	width: 100vw;
+	height: 16rem;
+	object-fit: cover;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: left;
+}
+
+.detail-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-column {
+	border: 1px solid #ccc;
+	padding: 0.5rem 1rem;
+}

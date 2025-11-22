@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City/Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <!-- YOUR CODE HERE -->
-  
+  <main>
+    <form action="submit" id="search-form">
+      <input type="search" id="city-input" name="city-input" placeholder="Enter city name">
+      <button id="search-button">Search</button>
+    </form>
+    <section id="result-container" style="display: none;">
+      <header>
+        <h1 id="city-name"></h1>
+        <span id="temperature"></span>
+        <img src="" alt="" id="sky">
+      </header>
+      <table id="detail-container">
+        <tr class="detail-row">
+          <th class="detail-column">Country</th>
+          <td class="detail-column" id="country"></td>
+        </tr>
+        <tr class="detail-row">
+          <th class="detail-column">Timezone</th>
+          <td class="detail-column" id="timezone"></td>
+        </tr>
+        <tr class="detail-row">
+          <th class="detail-column">Population</th>
+          <td class="detail-column" id="population"></td>
+        </tr>
+        <tr class="detail-row">
+          <th class="detail-column">Tomorrow&apos;s Forecast</th>
+          <td class="detail-column">
+            Low: <span id="low"></span><br />
+            Max: <span id="max"></span>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
   <script src="./app.js"></script>
 </body>
+
 </html>
